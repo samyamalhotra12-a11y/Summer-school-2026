@@ -1,0 +1,18 @@
+​analogRead():
+This function reads the voltage level from an Analog Input pin (like A0, A1). The Arduino uses an internal Analog-to-Digital Converter (ADC) to turn an input voltage (0V to 5V) into a digital number between 0 and 1023.
+​IoT Use Case: Reading a light-dependent resistor (LDR) to measure the brightness of a room to automatically turn on the lights when it gets dark.
+
+
+​analogWrite(): 
+This function writes a value to a PWM-capable pin (like 3, 5, 6, 9, 10, 11). Since the Arduino is digital, it cannot output true analog voltage. Instead, it uses PWM to simulate an analog level by outputting a number between 0 and 255.
+​IoT Use Case: Controlling the intensity of an LED in a smart lighting system to create a "dimming" effect.
+
+
+​What is PWM ?
+​PWM (Pulse Width Modulation) is a technique used to simulate an analog signal using only digital components. It works by rapidly switching a digital pin between HIGH (5V) and LOW (0V). By controlling the Duty Cycle (the percentage of time the signal is HIGH vs LOW), the Arduino creates an average voltage that can power devices at variable "levels" rather than just fully on or fully off.
+​
+Why it is used?
+Digital microcontrollers like the Arduino can only natively output HIGH or LOW signals. PWM is the standard industry solution to control devices that require variable power—such as motors, LED brightness, or servo positions—without needing complex and expensive external Digital-to-Analog Converters (DACs).
+​
+Practical IoT Example:
+In a Smart Irrigation System, PWM is used to control the speed of a DC water pump. Instead of the pump running at 100% speed all the time, the controller can use PWM to adjust the pump's speed based on the precise soil moisture level detected, ensuring water is conserved.
