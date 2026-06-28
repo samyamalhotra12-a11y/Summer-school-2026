@@ -19,13 +19,13 @@ const int mqttPort = 1883;
 
 // Change your name if required
 const char* tempTopic =
-"iitjammu/summer26/mishthichopra/temperature";
+"iitjammu/summer26/samyamalhotra/temperature";
 
 const char* humTopic =
-"iitjammu/summer26/mishthichopra/humidity";
+"iitjammu/summer26/samyamalhotra/humidity";
 
 const char* ledTopic =
-"iitjammu/summer26/mishthichopra/led_control";
+"iitjammu/summer26/samyamalhotra/led_control";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
