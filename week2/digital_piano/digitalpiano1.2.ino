@@ -1,4 +1,4 @@
-const int mode = 6;
+const int mode = 7;
 bool major = true;
 bool prev = HIGH;
 
