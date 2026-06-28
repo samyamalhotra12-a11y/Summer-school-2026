@@ -1,0 +1,15 @@
+​Arduino Functions:
+
+​setup(): This function runs exactly once when the Arduino is powered on or reset. It is used to initialize settings, such as defining pin modes (pinMode()) or starting the Serial Monitor (Serial.begin()).
+​
+loop(): Immediately after setup() finishes, this function runs repeatedly in a continuous cycle. It is where your main program logic lives (e.g., reading sensors, controlling motors).
+​
+
+The Problem with delay()
+​If you put a long delay() inside loop(), you stop the processor entirely for that duration. The Arduino becomes "blind" and unresponsive; it cannot read sensors, check button presses, or execute any other commands while the delay is active.
+​
+Impact on Responsiveness: Your sensor readings will be "stale." For example, if you have a delay(5000), the system will ignore any external events (like a safety button press or a rapid change in sensor data) for 5 seconds. This makes the system feel sluggish and unreliable.
+​
+The Non-Blocking Alternative: millis()
+​The non-blocking alternative is to use the millis() function.
+​Instead of stopping the clock with delay(), you record the current time using millis() and compare it to a target duration. If the duration hasn't passed yet, the code continues to run other tasks in the loop() instead of sitting idle.
