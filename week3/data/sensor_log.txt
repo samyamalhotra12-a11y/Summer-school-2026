@@ -1,0 +1,32 @@
+# multi sensor logger
+
+==================
+Time      : 27 ms
+Temp      : 24.00 C | Humidity: 40.00%
+Light     : 24% (Dark)
+Distance  : 397.65 cm
+==================
+==================
+Time      : 5134 ms
+Temp      : 24.00 C | Humidity: 40.00%
+Light     : 24% (Dark)
+Distance  : 285.35 cm
+==================
+==================
+Time      : 10243 ms
+Temp      : 24.00 C | Humidity: 77.50%
+Light     : 11% (Dark)
+Distance  : 285.26 cm
+==================
+==================
+Time      : 15341 ms
+Temp      : -4.10 C | Humidity: 76.00%
+Light     : 11% (Dark)
+Distance  : 106.39 cm
+==================
+==================
+Time      : 20455 ms
+Temp      : -4.10 C | Humidity: 76.00%
+Light     : 78% (Bright)
+Distance  : 336.94 cm
+==================
